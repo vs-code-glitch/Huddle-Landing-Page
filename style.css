@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url('./images/bg-desktop.svg') no-repeat;
+  background-color: hsl(257, 40%, 49%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container{
+  width:80%;
+  min-height:90vh;
+  /* border:2px solid red; */
+  display:flex;
+  flex-direction: column;
+}
+
+.main{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  /* height:max-content; */
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.logo img{
+  /* border: 2px solid orange; */
+  height:50px;
+}
+
+.hero-img{
+  /* background: url('./images/illustration-mockups.svg') no-repeat center; */
+  
+  /* border:2px solid orange; */
+ 
+}
+
+.link{
+  /* border:6px solid green; */
+  width: 100%;
+  /* flex-grow: 1.5; */
+  flex-grow: 1;
+  color:#fff;
+  font-size: 24px;
+  width:100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn{
+  border-radius: 50%;
+  color:#fff;
+  font-size: 20px;
+  height:50px;
+  width:50px;
+  margin:10px;
+  border:none;
+  outline: none;
+  background: transparent;
+  border:1px solid #fff;
+  cursor: pointer;
+}
+
+.btn:hover{
+ opacity: 0.9;
+}
+.hero-content{
+  
+  padding:30px;
+  color:#fff;
+}
+
+.hero-content h1{
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.hero-content p{
+  font-size:14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.register{
+  font-size: 20px;
+  border-radius: 50px;
+  color:#d67aed;
+  background-color: #fff;
+  width:200px;
+  height:50px;
+  border:none;
+  outline:none;
+  cursor: pointer;
+  margin-top:40px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+@media screen and (max-width: 1253px) {
+  .logo img{
+    width:100px;
+   
+  }
+  .hero-img img{
+    width:400px;
+  }
+  .hero-content h1{
+    font-size:24px;
+  }
+}
+
